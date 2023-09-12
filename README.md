@@ -15,11 +15,15 @@ En este repositorio se encuentran los siguiente documentos:
  - Iris.csv es el dataset a utilizar
  - Gradient_Descent_100.py
  - Gradient_Descent_X.py
+ - Reporte_Corregido_A01706083.pdf
 
-Estos dos archivos tienen implementados el mismo codigo, con la diferencia de que se ajustaron los valores de learning rate y epochs para realizar un analisis y comparacion de como se ve afectado.
-Esto se explica mas a detalle en el siguiente documento:
- - M2_Parte1_DOCUMENTACION_A01706083.pdf
+Y se encuentran tres archivos .py, en si los tres codigos tienen lo mismo, solamente hay una linea que cambia:
 
+model = LogisticRegression(solver='---', penalty='---', max_iter=100)
+
+La cual es donde se crea una instancia de un modelo de regresión logística utilizando la clase "LogisticRegression" de "sklearn.linear_model".
+
+El primero es con "liblinear", y "L1", el segundo con "newton-cg" y sin penalizacion, finalmente utilizo "sag" (Stochastic Average Gradient descent) y con "L2" de penalizacion, em el documento pdf hablo mas a detalle sobre esto, de forma general y resumida es para realizar una comparacion de los diferentes modelos.
 
 
 # Evaluación
